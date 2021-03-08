@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots Footer snapshot 1`] = `
+<div>
+  <hr />
+  <span
+    className="phone"
+  >
+    Customer Service: 1-889-34343-43
+  </span>
+</div>
+`;
+
+exports[`snapshots MyComponent snapshot 1`] = `
+<div
+  style={
+    Object {
+      "btn": Object {
+        "backgroundColor": "lightgreen",
+        "border": "1px solid yellow",
+        "borderRadius": "5px",
+        "cursor": "pointer",
+        "fontSize": "15px",
+        "outline": "none",
+        "padding": "0.5rem 1rem",
+      },
+      "fontFamily": "monospace",
+      "margin": "auto",
+      "width": "500px",
+    }
+  }
+>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "lightgreen",
+        "border": "1px solid yellow",
+        "borderRadius": "5px",
+        "cursor": "pointer",
+        "fontSize": "15px",
+        "outline": "none",
+        "padding": "0.5rem 1rem",
+      }
+    }
+  >
+    Toggle
+  </button>
+  <p>
+    Lorem ipsum dolor sit
+  </p>
+</div>
+`;
+
+exports[`snapshots MyMainApp snapshots 1`] = `
+<div
+  className="app container"
+>
+  <div
+    className="section"
+  >
+    <h1
+      className="has-text-centered title is-1"
+    >
+      Welcome in the personal finance app!
+    </h1>
+    <AccountBalance
+      accounts={
+        Object {
+          "balance": 1500,
+          "savingBalance": 1328,
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`snapshots Ticket snapshot 1`] = `
+<div
+  style={
+    Object {
+      "margin": "auto",
+      "textAlign": "center",
+      "width": "300px",
+    }
+  }
+>
+  <h2
+    className="title"
+  >
+    Hello world
+  </h2>
+  <button
+    className="increment"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "yellow",
+        "cursor": "pointer",
+        "padding": "0.5rem 1rem",
+      }
+    }
+  >
+    Add
+  </button>
+  <button
+    className="decrement"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "yellow",
+        "cursor": "pointer",
+        "padding": "0.5rem 1rem",
+      }
+    }
+  >
+    Reduce
+  </button>
+  <h2
+    className="total"
+  >
+    Count: 
+    0
+  </h2>
+</div>
+`;

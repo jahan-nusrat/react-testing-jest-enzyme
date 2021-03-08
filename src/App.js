@@ -11,7 +11,6 @@ function App() {
       <Ticket name='Count Count Count' />
       <Footer />
       <MyMainApp />
-      <div></div>
     </div>
   );
 }
