@@ -23,7 +23,7 @@ const MyComponent = () => {
   return (
     <div style={styles}>
       <button style={styles.btn} onClick={toggleText}>Toggle</button>
-      {state && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt commodi ipsa unde accusamus at accusantium, ducimus a! Repudiandae hic voluptas fugiat, soluta ut nesciunt totam doloribus facere dolore nobis!</p>}
+      {state && <p>Lorem ipsum dolor sit</p>}
     </div>
   )
 }
