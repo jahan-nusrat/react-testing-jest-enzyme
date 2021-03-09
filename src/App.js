@@ -3,6 +3,7 @@ import MyComponent from "./components/MyComponent";
 import Ticket from "./components/Ticket";
 import './App.css'
 import MyMainApp from "./components/Account/MyMainApp";
+import Users from "./components/Users/Users";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Ticket name='Count Count Count' />
       <Footer />
       <MyMainApp />
+      <Users />
     </div>
   );
 }

@@ -64,14 +64,73 @@ exports[`snapshots MyMainApp snapshots 1`] = `
     >
       Welcome in the personal finance app!
     </h1>
-    <AccountBalance
-      accounts={
-        Object {
-          "balance": 1500,
-          "savingBalance": 1328,
-        }
-      }
-    />
+    <div
+      className="columns"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="box"
+        >
+          <h4
+            className="title is-4"
+          >
+            Your account balance:
+          </h4>
+          <div
+            className="amount balance"
+          >
+            $
+          </div>
+          <button
+            className="button is-info"
+            id="balance-button"
+            onClick={[Function]}
+          >
+            Send 100$
+          </button>
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="box"
+        >
+          <h4
+            className="title is-4"
+          >
+            Your savings balance:
+          </h4>
+          <div
+            className="amount savings"
+          >
+            $
+          </div>
+          <button
+            className="button is-info"
+            onClick={[Function]}
+          >
+            Send 100$
+          </button>
+        </div>
+      </div>
+      <div
+        className="notification is-danger hidden"
+      >
+        <button
+          className="delete"
+          onClick={[Function]}
+        />
+        <p>
+          Your account balance is very low.
+        </p>
+        <p>
+          You can't transfer more money today.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;

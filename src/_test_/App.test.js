@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import MyMainApp from '../components/Account/MyMainApp'
 import Ticket from '../components/Ticket'
 import toJson from 'enzyme-to-json'
+import renderer from 'react-test-renderer'
 
 const name = 'Hello world'
 
@@ -20,8 +21,10 @@ describe('componenets rendering without creashing', () => {
   });
   it('Ticket render', () => {
     const wrapper = mount(<Ticket name={name} />)
+    const button = wrapper.find('button')
     const title = wrapper.find('h2.title').text()
     expect(title).toEqual(name)
+    expect(button.length).toEqual(2)
   })
 });
 
@@ -37,8 +40,8 @@ describe('snapshots', () => {
   });
 
   it('MyMainApp snapshots', () => {
-    const tree = shallow(<MyMainApp />)
-    expect(toJson(tree)).toMatchSnapshot()
+    const tree = renderer.create(<MyMainApp />).toJSON()
+    expect(tree).toMatchSnapshot()
   });
 
   it('Ticket snapshot', () => {
